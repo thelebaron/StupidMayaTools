@@ -1,0 +1,1 @@
+C:\Users\thele\AppData\Local\atom\app-1.19.3\\atom.exe C:\Users\thele\Documents\maya\2017\scripts\tools\chrisTools.py
