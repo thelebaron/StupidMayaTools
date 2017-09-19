@@ -429,7 +429,7 @@ def PolyToCurveDef(*args):
             #cmds.select( clear=True )
             selection = cmds.ls(sl=1)
 
-            #maya wont select an edgeloop beyond a certain angle so this is useless
+            #stupid piece of shit maya wont select an edgeloop beyond a certain angle so this is useless
             #cmds.polySelect( selection, edgeLoop=1 )
             #cmds.polySelect( selection, edgeLoopPath=(1, edgeLoopLast) )
 
@@ -438,7 +438,7 @@ def PolyToCurveDef(*args):
             for edgeCount in range(0,edgeCount, 1):
                 cmds.polySelect( selection, edgeLoop=edgeNumber, add=True)
                 edgeNumber += 3
-            #maya doesnt register the above as a proper loop? not sure, but after the selection is made this works:
+            #stupid maya doesnt register the above as a proper loop? not sure, but after the selection is made this works:
             #  ctrl click>shrink selection >shrink along loop. THEN converting to curve. BUT
             #   the script editor outputs it as polytraverse 6, when using 6 in the script it shrinks the selection(as expected)
             # when using 5, it works as intended(but not expected?) i dont understand pything/mel enough apparently
