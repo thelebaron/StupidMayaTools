@@ -338,7 +338,7 @@ setAttr "defaultResolution.height" 720;
 """
 
 # ____[SHELF]____
-cmds.shelfLayout( 'renderCrap',cellWidth=145,cellHeight=45 )
+cmds.shelfLayout( 'renderStuff',cellWidth=145,cellHeight=45 )
 cmds.button( label='Set CamHead', command=SelectCameraHead )
 cmds.button( label='Set CamUpperBod', command=SelectCamUpper )
 cmds.button( label='Set CamFullBod', command=SelectCamFull )
@@ -360,7 +360,7 @@ def SelEdgeLoopDef(*args):
         #cmds.select( clear=True )
         selection = cmds.ls(sl=1)
 
-            #stupid piece of shit maya wont select an edgeloop beyond a certain angle so this is useless
+            #maya wont select an edgeloop beyond a certain angle so this is useless
             #cmds.polySelect( selection, edgeLoop=1 )
             #cmds.polySelect( selection, edgeLoopPath=(1, edgeLoopLast) )
 
